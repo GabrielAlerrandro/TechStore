@@ -5,17 +5,20 @@ import NotFound from "./pages/NotFound"
 import Categorias from "./pages/Categorias"
 import Produtos from "./pages/Produtos"
 import Header from "./components/Header"
+import { CartProvider } from "./contexts/CartContext"
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/products" element={<Produtos />} />
-        <Route path="/categories" element={<Categorias />} />
-      </Routes>
+      <CartProvider>
+        <Header />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/products" element={<Produtos />} />
+          <Route path="/categories" element={<Categorias />} />
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }
