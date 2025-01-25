@@ -8,9 +8,9 @@ interface ThemeContextInterface {
 const ThemeContext = createContext<ThemeContextInterface | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const THEME_FROM_LOCAL_STORAGE = localStorage.getItem("theme")
+  const themeFromLocalStorage = localStorage.getItem("theme")
   const [theme, setTheme] = useState(
-    THEME_FROM_LOCAL_STORAGE === "dark" ? "light" : "dark"
+    themeFromLocalStorage === "dark" ? "light" : "dark"
   )
 
   useEffect(() => {

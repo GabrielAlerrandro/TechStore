@@ -1,13 +1,11 @@
 import { ReactNode } from "react"
 
-function Card({
-  className,
-  children,
-}: {
+interface CardProps {
   className: string
   children: ReactNode
-}) {
-  return <div className={className}>{children}</div>
+  onMouseLeave?: () => void
 }
 
-export default Card
+export function Card({ className, children }: CardProps) {
+  return <section className={className}>{children}</section>
+}
