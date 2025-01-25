@@ -1,5 +1,6 @@
 import Categorys from "../components/Categorys"
 import Offers from "../components/Offers"
+import Product from "../components/Product"
 
 function Home() {
   return (
@@ -14,6 +15,8 @@ function Home() {
       <h2 className="text-xl font-semibold mt-10 text-text-light dark:text-text-dark">
         Produtos em Destaque
       </h2>
+
+      <Product />
     </>
   )
 }
