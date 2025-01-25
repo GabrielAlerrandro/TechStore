@@ -1,3 +1,5 @@
+import { Button } from "./Button"
+
 function Offers() {
   return (
     <div className="flex justify-evenly items-center bg-gradient-to-r from-primary-blue to-primary-purple m-4 p-11 rounded-md gap-8">
@@ -6,9 +8,9 @@ function Offers() {
         <h2 className="text-xl">
           Até 50% de desconto em produtos selecionados
         </h2>
-        <button className="inline-block rounded-lg bg-white text-primary-blue text-center w-[50%] py-2 text-lg">
+        <Button className="inline-block rounded-lg bg-white text-primary-blue text-center w-[50%] py-2 text-lg">
           Ver ofertas
-        </button>
+        </Button>
       </div>
       <div className="w-96 h-[400px] flex justify-center items-center ">
         <img

@@ -1,4 +1,5 @@
 import { SearchIcon } from "lucide-react"
+import { Button } from "./Button"
 
 interface SearchBarProps {
   isSearchEnabled: boolean
@@ -19,21 +20,21 @@ function SearchBar({ isSearchEnabled, setIsSearchEnabled }: SearchBarProps) {
             placeholder="Pesquisar"
             className="font-medium rounded-md w-full px-4 py-2 text-text-light bg-transparent outline-none dark:text-text-dark"
           />
-          <button
+          <Button
             className="absolute right-2 top-1/2 transform -translate-y-1/2 text-text-light dark:text-text-dark"
             onClick={toggleSearchBar}
           >
             <SearchIcon size={24} />
-          </button>
+          </Button>
         </>
       ) : (
         <>
-          <button
+          <Button
             onClick={toggleSearchBar}
             className="w-full flex justify-end p-2 text-text-light dark:text-text-dark"
           >
             <SearchIcon size={24} />
-          </button>
+          </Button>
         </>
       )}
     </div>
