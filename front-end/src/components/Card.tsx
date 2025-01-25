@@ -6,6 +6,10 @@ interface CardProps {
   onMouseLeave?: () => void
 }
 
-export function Card({ className, children }: CardProps) {
-  return <section className={className}>{children}</section>
+export function Card({ className, children, onMouseLeave }: CardProps) {
+  return (
+    <section className={className} onMouseLeave={onMouseLeave}>
+      {children}
+    </section>
+  )
 }
