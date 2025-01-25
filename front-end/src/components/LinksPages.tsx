@@ -7,9 +7,10 @@ function LinksPages() {
     { name: "categorias", path: "/categories" },
   ]
   return (
-    <div className="flex flex-row gap-4 capitalize  ">
+    <section className="flex flex-row gap-4 capitalize  ">
       {links.map((link) => (
         <NavLink
+          key={link.name}
           to={link.path}
           className={({ isActive }) =>
             isActive
@@ -20,7 +21,7 @@ function LinksPages() {
           {link.name}
         </NavLink>
       ))}
-    </div>
+    </section>
   )
 }
 
