@@ -1,5 +1,5 @@
 import { Gamepad2, Keyboard, Monitor, Mouse, PcCase } from "lucide-react"
-import { Card } from "./Card"
+import { Card } from "../Card"
 
 const categories = [
   {

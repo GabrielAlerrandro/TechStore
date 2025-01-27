@@ -1,8 +1,8 @@
 import { X } from "lucide-react"
-import { Card } from "./Card"
-import CartItems from "./CartItems"
-import { useCartContext } from "../contexts/CartContext"
-import { Button } from "./Button"
+import { Card } from "../Card"
+import CartItems from "./components/CartItems"
+import { useCartContext } from "../../contexts/CartContext"
+import { Button } from "../Button"
 
 interface cartProps {
   isCartOpen: boolean
@@ -22,8 +22,9 @@ export function Cart({ isCartOpen, setIsCartOpen }: cartProps) {
         <header className="flex justify-between items-center ">
           <h2 className="text-xl font-semibold">Carrinho</h2>
           <Button
-            className="cursor-pointer hover:text-red-600 transition-all duration-300 ease-in-out "
+            className="hover:text-red-600 transition-all duration-300 ease-in-out  "
             onClick={() => setIsCartOpen(false)}
+            type="transparent"
           >
             <X />
           </Button>
@@ -32,11 +33,15 @@ export function Cart({ isCartOpen, setIsCartOpen }: cartProps) {
         {isCartOpen && <CartItems />}
 
         <footer className="flex justify-between items-center ">
-          <Button className="bg-primary-blue text-white px-4 py-2 rounded-md w-32 h-10 flex flex-row items-center justify-center ">
+          <Button
+            className=" px-4 py-2 rounded-md w-32 h-10 flex flex-row items-center justify-center "
+            type="primary"
+          >
             Finalizar
           </Button>
           <Button
-            className="bg-red-600 text-white px-4 py-2 rounded-md w-32 h-10"
+            className=" px-4 py-2 rounded-md w-32 h-10"
+            type="cancel"
             onClick={() => handleClearCart()}
           >
             Limpar

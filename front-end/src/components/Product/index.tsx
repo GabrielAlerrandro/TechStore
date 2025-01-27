@@ -1,6 +1,6 @@
-import { Card } from "./Card"
-import { useCartContext } from "../contexts/CartContext"
-import { Button } from "./Button"
+import { Card } from "../Card"
+import { useCartContext } from "../../contexts/CartContext"
+import { Button } from "../Button"
 const MockProductItems = [
   {
     id: 1,
@@ -43,13 +43,14 @@ function Product() {
   return MockProductItems.map((item) => (
     <Card
       key={item.id}
-      className="w-full h-full dark:text-text-dark dark:border-dark-border dark:bg-dark-background border-2 border-gray-300 rounded-md p-2 "
+      className="w-full h-full  dark:text-text-dark dark:border-dark-border dark:bg-dark-background border-2 border-gray-300 rounded-md p-2 "
     >
       <img src={item.image} alt={item.name} className="w-36 h-24" />
       <h2>{item.name}</h2>
       <p>{item.price}</p>
       <Button
-        className="bg-primary-blue text-white px-4 py-2 rounded-md"
+        className=" px-4 py-2 rounded-md"
+        type="primary"
         onClick={() => handleAddToCart(item)}
       >
         Adicionar ao carrinho

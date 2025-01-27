@@ -1,6 +1,6 @@
-import Categorys from "../components/Categorys"
-import Offers from "../components/Offers"
-import Product from "../components/Product"
+import Categorys from "../../components/Category"
+import Offers from "../../components/Offers"
+import Product from "../../components/Product"
 
 function Home() {
   return (

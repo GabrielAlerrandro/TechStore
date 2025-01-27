@@ -1,6 +1,6 @@
 import { MinusIcon, PlusIcon } from "lucide-react"
-import { useCartContext } from "../contexts/CartContext"
-import { Card } from "./Card"
+import { useCartContext } from "../../../contexts/CartContext"
+import { Card } from "../../Card"
 
 interface CartItem {
   id: number
