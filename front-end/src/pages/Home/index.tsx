@@ -1,10 +1,12 @@
 import Categorys from "../../components/Category"
+import Header from "../../components/Header"
 import Offers from "../../components/Offers"
 import Product from "../../components/Product"
 
 function Home() {
   return (
     <>
+      <Header />
       <Offers />
 
       <h2 className="text-center text-xl font-semibold mt-10 mb-3 text-text-light dark:text-text-dark ">
