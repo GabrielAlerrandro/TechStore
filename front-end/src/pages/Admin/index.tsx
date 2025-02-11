@@ -5,9 +5,7 @@ import SideBar from "./components/SideBar"
 function Admin() {
   return (
     <>
-      <header className="mb-3">
-        <Header />
-      </header>
+      <header className="mb-3">{/* <Header /> */}</header>
 
       <div className="flex">
         <aside className="">

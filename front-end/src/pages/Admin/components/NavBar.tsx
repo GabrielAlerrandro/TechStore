@@ -1,14 +1,23 @@
 import { Play, Bell, ShoppingBag, Sun, Moon, Settings } from "lucide-react"
-import { useTheme } from "../../../hooks/useTheme"
 import { Link } from "react-router-dom"
-import { NavBar } from "../../../components/Header/components"
-import Logo from "../../../components/Logo"
+import { NavBar } from "../../../shared/components/Header/components"
+import Logo from "../../../shared/components/Logo"
+import { useDispatch, useSelector } from "react-redux"
+import { RootState } from "../../../redux/store"
+import { switchTheme } from "../../../features/theme/themeSlice"
 
 export function Header() {
   const iconStyle =
     "cursor-pointer text-text-light dark:text-text-dark w-9 h-9 ml-4 transform transition duration-150 hover:scale-125"
 
-  const { theme, setTheme } = useTheme()
+  const theme = useSelector((state: RootState) => state.theme.theme)
+  const dispatch = useDispatch()
+
+  const handleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light"
+    dispatch(switchTheme({ theme: newTheme }))
+  }
+
   return (
     <NavBar.Root className="w-full mt-2">
       <NavBar.Content className="flex justify-between">
@@ -23,13 +32,13 @@ export function Header() {
           {theme === "light" ? (
             <NavBar.Icon
               icon={Sun}
-              onClick={() => setTheme("dark")}
+              onClick={() => handleTheme()}
               className={iconStyle}
             />
           ) : (
             <NavBar.Icon
               icon={Moon}
-              onClick={() => setTheme("light")}
+              onClick={() => handleTheme()}
               className={iconStyle}
             />
           )}

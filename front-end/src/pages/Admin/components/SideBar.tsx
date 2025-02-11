@@ -6,7 +6,7 @@ import {
   LayoutGrid,
 } from "lucide-react"
 import { Link } from "react-router-dom"
-import { NavBar } from "../../../components/Header/components"
+import { NavBar } from "../../../shared/components/Header/components"
 
 function Sidebar() {
   return (
