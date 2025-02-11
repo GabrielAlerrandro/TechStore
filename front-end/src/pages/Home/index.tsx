@@ -1,12 +1,12 @@
-import Categorys from "../../components/Category"
-import Header from "../../components/Header"
-import Offers from "../../components/Offers"
-import Product from "../../components/Product"
+import Categorys from "./componentes/Category"
+// import Header from "../../shared/components/Header"
+import Product from "../../shared/components/Product"
+import Offers from "./componentes/Offers"
 
 function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Offers />
 
       <h2 className="text-center text-xl font-semibold mt-10 mb-3 text-text-light dark:text-text-dark ">
