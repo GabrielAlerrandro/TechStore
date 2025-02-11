@@ -20,5 +20,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "public/useTheme.tsx",
+    "public/useCart.tsx",
+    "public/contexts"
+  ]
 }
