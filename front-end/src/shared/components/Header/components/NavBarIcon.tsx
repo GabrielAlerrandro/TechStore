@@ -5,10 +5,5 @@ interface NavBarIconProps extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export function NavBarIcon({ icon: Icon, ...rest }: NavBarIconProps) {
-  return (
-    <Icon
-      className="cursor-pointer text-text-light dark:text-text-dark"
-      {...rest}
-    />
-  )
+  return <Icon className="cursor-pointer text-light dark:text-dark" {...rest} />
 }

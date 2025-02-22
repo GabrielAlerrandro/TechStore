@@ -4,9 +4,7 @@ interface SearchBarContainerProps {
 
 function SearchBarContainer({ children }: SearchBarContainerProps) {
   return (
-    <div className="relative w-80 text-text-light dark:text-text-dark">
-      {children}
-    </div>
+    <div className="relative w-80 text-light dark:text-dark">{children}</div>
   )
 }
 

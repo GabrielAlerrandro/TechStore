@@ -8,7 +8,7 @@ import { switchTheme } from "../../../features/theme/themeSlice"
 
 export function Header() {
   const iconStyle =
-    "cursor-pointer text-text-light dark:text-text-dark w-9 h-9 ml-4 transform transition duration-150 hover:scale-125"
+    "cursor-pointer text-light dark:text-dark w-9 h-9 ml-4 transform transition duration-150 hover:scale-125"
 
   const theme = useSelector((state: RootState) => state.theme.theme)
   const dispatch = useDispatch()
@@ -46,7 +46,7 @@ export function Header() {
 
         <NavBar.Content className="flex">
           <Link to="/admin/config">
-            <Settings className="text-text-light dark:text-text-dark w-9 h-9 mr-4 transform transition duration-150 hover:scale-125" />
+            <Settings className="text-light dark:text-dark w-9 h-9 mr-4 transform transition duration-150 hover:scale-125" />
           </Link>
         </NavBar.Content>
       </NavBar.Content>

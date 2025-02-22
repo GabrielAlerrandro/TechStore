@@ -46,7 +46,7 @@ function Header() {
         <NavBar.Icon icon={ShoppingCart} onMouseEnter={handleIsCartOpen} />
 
         {isCartOpen && (
-          <Card className="dark:bg-dark-background dark:text-text-dark transition-all duration-300 ease-in-out absolute top-full right-0 mt-2 w-80 max-h-80 overflow-y-auto bg-white shadow-lg rounded-md ">
+          <Card className="dark:bg-dark-background dark:text-dark transition-all duration-300 ease-in-out absolute top-full right-0 mt-2 w-80 max-h-80 overflow-y-auto bg-white shadow-lg rounded-md ">
             <Cart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
           </Card>
         )}

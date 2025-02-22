@@ -12,7 +12,7 @@ export function SearchBarToggle({
 }: SearchBarToggleProps) {
   return (
     <Button className={className} onClick={toggleSearchBar} type="transparent">
-      <SearchIcon size={24} className=" text-text-light dark:text-text-dark" />
+      <SearchIcon size={24} className=" text-light dark:text-dark" />
     </Button>
   )
 }

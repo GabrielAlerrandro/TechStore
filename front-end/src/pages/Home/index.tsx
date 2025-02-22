@@ -9,12 +9,12 @@ function Home() {
       {/* <Header /> */}
       <Offers />
 
-      <h2 className="text-center text-xl font-semibold mt-10 mb-3 text-text-light dark:text-text-dark ">
+      <h2 className="text-center text-xl font-semibold mt-10 mb-3 text-light dark:text-dark ">
         Categorias
       </h2>
 
       <Categorys />
-      <h2 className="text-xl font-semibold mt-10 text-text-light dark:text-text-dark">
+      <h2 className="text-xl font-semibold mt-10 text-light dark:text-dark">
         Produtos em Destaque
       </h2>
 

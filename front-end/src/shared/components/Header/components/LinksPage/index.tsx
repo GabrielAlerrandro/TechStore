@@ -15,7 +15,7 @@ function LinksPages() {
           className={({ isActive }) =>
             isActive
               ? "active-link text-primary-blue font-bold "
-              : "text-text-light dark:text-text-dark font-medium"
+              : "text-light dark:text-dark font-medium"
           }
         >
           {link.name}

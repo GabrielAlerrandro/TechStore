@@ -60,13 +60,14 @@ function Product() {
     openModal()
   }
 
-  const handleAddToCart = (item: Product) => {
+  const handleAddToCart = (item: Product, event?) => {
+    event?.stopPropagation()
     dispatch(addToCart(item))
     closeModal()
   }
 
   return (
-    <div className="flex flex-wrap justify-start gap-4 m-2  ">
+    <div className="flex flex-wrap justify-start gap-4 m-2 relative">
       {MockProductItems.map((item) => {
         const formattedPrice = new Intl.NumberFormat("pt-BR", {
           style: "currency",
@@ -76,7 +77,7 @@ function Product() {
         return (
           <Card
             key={item.id}
-            className=" w-72 cursor-pointer dark:text-text-dark  dark:border-dark-border dark:bg-dark-background border-2 border-gray-300 rounded-md p-3 shadow-xl dark:shadow-dark-border transition-transform duration-300 ease-in-out hover:-translate-y-3 hover:shadow-2xl "
+            className=" w-72 cursor-pointer dark:text-dark  dark:border-dark-border dark:bg-dark-background border-2 border-gray-300 rounded-md p-3 shadow-xl dark:shadow-dark-border transition-transform duration-300 ease-in-out hover:-translate-y-3 hover:shadow-2xl "
             onClick={() => handleOpenModal(item)}
           >
             <img src={item.image} alt={item.name} className="w-full h-auto" />
@@ -86,7 +87,7 @@ function Product() {
             <Button
               className=" text-lg mt-2 px-4 py-2 rounded-md w-full flex items-center gap-2 justify-center "
               type="primary"
-              onClick={() => handleAddToCart(item)}
+              onClick={(event) => handleAddToCart(item, event)}
             >
               <ShoppingCart size={20} />
               Adicionar ao carrinho
@@ -120,7 +121,7 @@ function Product() {
               onClick={() => handleAddToCart(selectedProduct)}
               className="text-lg mt-2 px-4 py-2 rounded-md w-full flex items-center gap-2 justify-center"
             >
-              Adicionar ao carrinho
+              Adicionar ao carrinhozz
             </Button>
           </ModalFooter>
         </ModalRoot>

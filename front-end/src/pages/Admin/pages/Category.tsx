@@ -1,7 +1,7 @@
 function Category() {
   return (
     <>
-      <div className="text-text-light dark:text-text-dark"></div>
+      <div className="text-light dark:text-dark"></div>
     </>
   )
 }
