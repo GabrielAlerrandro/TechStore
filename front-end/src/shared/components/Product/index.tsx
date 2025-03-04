@@ -67,7 +67,7 @@ function Product() {
   }
 
   return (
-    <div className="flex flex-wrap justify-start gap-4 m-2 relative">
+    <div className="flex flex-wrap md:justify-start justify-center gap-4 m-2 relative">
       {MockProductItems.map((item) => {
         const formattedPrice = new Intl.NumberFormat("pt-BR", {
           style: "currency",

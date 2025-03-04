@@ -12,6 +12,9 @@ export default {
         "dark-border": "#001733",
         "dark-background": "#030917",
       },
+      screens: {
+        'teste-md': '850px', // Define um novo breakpoint
+      }
     },
   },
   plugins: [],

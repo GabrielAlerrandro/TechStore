@@ -1,9 +1,10 @@
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\ApiApplication.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\controllers\ExcepetionsController.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\controllers\ProductsController.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\dtos\ProductDto.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\models\ApiResponse.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\models\ProductModel.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\repository\ProductRepositorie.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\services\ImgService.java
-C:\Users\Usuario\Documents\meupc\FullStack Project\TechStore\back-end\api\src\main\java\com\rest\api\products\services\ProductsService.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\ApiApplication.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\global\excepetions\CustomErrorController.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\controllers\ExcepetionsController.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\controllers\ProductsController.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\dtos\ProductDto.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\models\ApiResponse.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\models\ProductModel.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\repository\ProductRepositorie.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\services\ImgService.java
+C:\Users\Usuario\Documents\meupc\Fullstack\TechStore\back-end\api\src\main\java\com\rest\api\products\services\ProductsService.java

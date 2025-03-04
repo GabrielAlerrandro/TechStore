@@ -7,7 +7,7 @@ function LinksPages() {
     { name: "categorias", path: "/categories" },
   ]
   return (
-    <section className="flex flex-row gap-4 capitalize  ">
+    <section className="md:flex hidden flex-row gap-4 capitalize  ">
       {links.map((link) => (
         <NavLink
           key={link.name}

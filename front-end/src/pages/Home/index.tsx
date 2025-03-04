@@ -14,7 +14,7 @@ function Home() {
       </h2>
 
       <Categorys />
-      <h2 className="text-xl font-semibold mt-10 text-light dark:text-dark">
+      <h2 className="text-xl md:text-start text-center font-semibold mt-10 text-light dark:text-dark">
         Produtos em Destaque
       </h2>
 

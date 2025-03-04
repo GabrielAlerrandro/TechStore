@@ -1,4 +1,4 @@
-import { Heart, Moon, ShoppingCart, Sun, User } from "lucide-react"
+import { Heart, Menu, Moon, ShoppingCart, Sun, User } from "lucide-react"
 import SearchBar from "../SearchBar"
 import Logo from "../Logo"
 import LinksPages from "./components/LinksPage"
@@ -58,9 +58,12 @@ function Header() {
         ) : (
           <NavBar.Icon icon={Sun} onClick={() => handleTheme()} />
         )}
+
+        <NavBar.Icon icon={Menu} />
+         
       </NavBar.Content>
     </NavBar.Root>
   )
 }
-
+// eu tentei pôr o menu, mas o classname mata o estilo do bagui
 export default Header
