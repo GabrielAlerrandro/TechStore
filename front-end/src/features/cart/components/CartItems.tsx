@@ -41,14 +41,15 @@ function CartItems() {
           </div>
 
           <div className="flex items-center gap-3">
+          <MinusIcon
+              className="w-4 h-4 cursor-pointer"
+              onClick={() => handleRemoveCart(item)}
+            />
             <PlusIcon
               className="w-4 h-4 cursor-pointer"
               onClick={() => handleAddCart(item)}
             />
-            <MinusIcon
-              className="w-4 h-4 cursor-pointer"
-              onClick={() => handleRemoveCart(item)}
-            />
+            
           </div>
         </section>
       ))}

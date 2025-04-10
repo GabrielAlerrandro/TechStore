@@ -6,7 +6,7 @@ import { ModalRoot } from "../Modal/ModalRoot"
 import { ModalTitle } from "../Modal/ModalTitle"
 import { ModalContent } from "../Modal/ModalContent"
 import { ModalFooter } from "../Modal/ModalFooter"
-import { useState } from "react"
+import { SyntheticEvent, useState } from "react"
 import { useDispatch } from "react-redux"
 import { AppDispatch } from "../../../redux/store"
 import { addToCart } from "../../../features/cart/cartSlice"
@@ -60,7 +60,7 @@ function Product() {
     openModal()
   }
 
-  const handleAddToCart = (item: Product, event?) => {
+  const handleAddToCart = (item: Product, event?: SyntheticEvent) => {
     event?.stopPropagation()
     dispatch(addToCart(item))
     closeModal()
@@ -121,7 +121,7 @@ function Product() {
               onClick={() => handleAddToCart(selectedProduct)}
               className="text-lg mt-2 px-4 py-2 rounded-md w-full flex items-center gap-2 justify-center"
             >
-              Adicionar ao carrinhozz
+              Adicionar ao carrinho
             </Button>
           </ModalFooter>
         </ModalRoot>
